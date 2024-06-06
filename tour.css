@@ -1,0 +1,168 @@
+* {}
+
+.hero {
+    background-image: url(image/mountain\ 1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40rem;
+    align-items: center;
+
+}
+
+.view {
+    text-align: center;
+    padding-top: 10%;
+    color: rgb(13, 43, 75);
+}
+
+.hero .view h1 {
+    font-size: 50px;
+    font-weight: 40px;
+}
+
+.hero .view h2 {
+    font-weight: 600;
+    font-size: 50px;
+}
+
+.hero .view a {
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgb(11, 11, 44);
+    color: white;
+    font-style: none;
+}
+
+.changecontent::after {
+    content: ' ';
+    color: rgb(240, 223, 126);
+    text-shadow: 0px 1px 1px black;
+    animation: changetext 10s infinite linear;
+}
+
+@keyframes changetext {
+    0% {
+
+        content: "Tokyo";
+    }
+
+    10% {
+        content: "France";
+    }
+
+    20% {
+        content: "Tokyo";
+    }
+
+    30% {
+        content: "United State";
+    }
+
+    40% {
+        content: "China";
+    }
+
+    50% {
+        content: "South Africa";
+    }
+
+    60% {
+        content: "United Kingdom";
+    }
+
+    70% {
+        content: "Dubai";
+    }
+
+    80% {
+        content: "Saudia Arabia";
+    }
+
+    90% {
+        content: "Spain";
+    }
+}
+
+.hero .view button {
+    padding: 20px;
+    background: rgb(6, 6, 29);
+    color: white;
+    border-radius: 10px;
+    transition: 0.5s;
+    font-style: none;
+    font-weight: 20px;
+    border: none;
+}
+
+section {
+    display: flex;
+    margin-top: 30px;
+    /* align-items: center;
+    justify-content: center; */
+    gap: 20px;
+    color: rgb(11, 11, 44);
+    text-align: center;
+}
+
+section img {
+    border-radius: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+.me {
+    color: gold;
+}
+
+footer {
+    background-color: rgb(4, 4, 36);
+    margin-top: 30px;
+    align-items: center;
+    justify-content: center;
+    color: rgb(212, 198, 115);
+    width: 100%;
+    text-align: center;
+}
+
+main {
+    text-align: center;
+    color: rgb(11, 11, 44);
+}
+
+main a {
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgb(11, 11, 44);
+    color: white;
+    font-style: none;
+}
+
+@media (max-width: 420px) {
+    section {
+        flex-direction: column;
+        padding: 30px;
+    }
+
+    section img {
+        width: 100px;
+    }
+
+
+    .view h1 {
+        font-size: 20px;
+    }
+
+    .hero {
+        width: 100%;
+    }
+
+    .hero .view a {
+        padding: 20px;
+    }
+
+    .view {
+        padding: 30px;
+    }
+}

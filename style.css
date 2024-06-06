@@ -1,0 +1,232 @@
+/* *{ */
+/* outline: 1px solid red; */
+/* } */
+.air {
+    background-image: url(image/flying-commercial.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30rem;
+    align-items: center;
+    justify-content: center;
+    color: rgb(8, 2, 48)
+}
+
+.air h1 {
+    text-align: center;
+    align-items: center;
+    font-size: 50px;
+    padding-top: 10%;
+}
+
+.air p {
+    text-align: center;
+}
+
+/* .air button {
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    justify-content: center;
+    color: white;
+    background-color: rgb(9, 9, 31);
+    border: none;
+    margin-left: 45%;
+    margin-top: 20px;
+} */
+
+.air a {
+    text-align: center;
+    text-decoration: none;
+    background-color: rgb(7, 7, 37);
+    color: white;
+    padding: 7px;
+    border-radius: 10px;
+    margin-left: 45%;
+    margin-top: 20px;
+    border: none;
+}
+
+.section__container {
+    border-radius: 2rem;
+    border: 1px solid var(--extra-light);
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
+    margin: 30px;
+}
+
+.booking__nav {
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    background-color: var(--extra-light);
+    border-radius: 5px;
+}
+
+.booking__nav span {
+    flex: 1;
+    padding: 1rem 2rem;
+    font-weight: 500;
+    color: var(--extra-light);
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.booking__nav span:nth-child(2) {
+    color: var(--white);
+    background-color: var(--primary-color);
+}
+
+.section__container form {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) auto;
+    gap: 1rem;
+}
+
+.section__container .input_content {
+    width: 100%;
+}
+
+.section__container .form__group {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.section__container .form__group span {
+    padding: 10px;
+    font-size: 1.5rem;
+    color: var(--text-dark);
+    background-color: rgb(209, 209, 233);
+    border-radius: 10px;
+}
+
+.section__container .input__group {
+    width: 100%;
+    position: relative;
+}
+
+.section__container label {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--text-dark);
+    pointer-events: none;
+    transition: 0.3s;
+}
+
+.section__container input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    border-radius: 1px solid var(--primary-color);
+    color: var(--text-dark);
+    border-bottom: 1px solid var(--primary-color);
+}
+
+.section__container input:focus|label {
+    font-size: 0.8rem;
+    top: 0;
+}
+
+.section__container .form__group p {
+    margin-top: 0.8rem;
+    top: 0;
+    color: var(--text-light);
+}
+
+.section__container .btn {
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+
+.air a:hover {
+    background-color: wheat;
+    transition: 6s;
+    color: rgb(16, 16, 39);
+}
+
+span {
+    color: rgb(8, 4, 48);
+}
+
+.card {
+    text-align: center;
+}
+
+span {
+    color: rgb(238, 216, 94);
+}
+
+
+.card2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(7, 7, 37);
+    gap: 20px;
+    text-align: center;
+}
+
+.hi h2 {
+    text-align: center;
+}
+
+.card2 div {
+    box-shadow: 2px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 10px;
+}
+
+footer {
+    background-color: rgb(4, 4, 36);
+    margin-top: 30px;
+    align-items: center;
+    justify-content: center;
+    color: rgb(212, 198, 115);
+    width: 100%;
+    text-align: center;
+}
+
+.me {
+    color: gold;
+}
+
+footer a {
+    color: rgb(238, 216, 94);
+    text-decoration: none;
+}
+
+@media screen and (max-width: 468px) {
+    .air {
+        background-position: 50%;
+    }
+
+    .air h1 {
+        font-size: 30px;
+    }
+
+    .air a {
+        padding: 5px;
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+
+    .card2 {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .card h2 {
+        font-size: 30px;
+    }
+
+    hr {
+        padding: 30px;
+    }
+}
